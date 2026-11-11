@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nor3iny ❤️</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#ff9ec4,#ff5f9e);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+}
+
+.card{
+width:90%;
+max-width:400px;
+background:rgba(255,255,255,.15);
+backdrop-filter:blur(15px);
+padding:25px;
+border-radius:25px;
+text-align:center;
+color:white;
+box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+img{
+width:140px;
+height:140px;
+border-radius:50%;
+border:5px solid white;
+margin-bottom:15px;
+object-fit:cover;
+}
+
+input{
+width:100%;
+padding:15px;
+border:none;
+border-radius:50px;
+margin-top:15px;
+font-size:18px;
+text-align:center;
+outline:none;
+}
+
+button{
+width:100%;
+padding:15px;
+border:none;
+border-radius:50px;
+background:#ff2d75;
+color:white;
+font-size:18px;
+margin-top:15px;
+cursor:pointer;
+}
+
+h1{
+margin-bottom:10px;
+}
+
+#home{
+display:none;
+}
+
+.message{
+margin-top:25px;
+font-size:20px;
+line-height:1.9;
+}
+
+.small{
+margin-top:15px;
+font-size:18px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<div id="login">
+
+<img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=400">
+
+<h1>Ready? 💕</h1>
+
+<input
+type="password"
+id="pass"
+placeholder="Enter Password">
+
+<button onclick="login()">💞 Unlock 💞</button>
+
+<p id="wrong"></p>
+
+</div>
+
+<div id="home">
+
+<h1>❤️ Noorhan & Eslam ❤️</h1>
+
+<div class="message">
+
+💗 ربنا يديمك في حياتي، ويكتب لينا الخير مع بعض، ويخلي محبتنا دايمًا في الحلال وبالطريقة اللي بترضي ربنا وقلوبنا، ويجمعنا مع بعض في الحلال. 🤍🌸
+
+</div>
+
+<p class="small">
+I Love You Forever ❤️
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+function login(){
+
+let password="love";
+
+if(document.getElementById("pass").value===password){
+
+document.getElementById("login").style.display="none";
+
+document.getElementById("home").style.display="block";
+
+}else{
+
+document.getElementById("wrong").innerHTML="❌ Wrong Password";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
